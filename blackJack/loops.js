@@ -28,7 +28,40 @@
 // let flooredNumber = Math.floor(5.99445)
 // console.log(flooredNumber);
 
-function rollDice() {
-    let randomNumber = Math.floor(Math.random() * 6) + 1
-    return randomNumber;
+// function rollDice() {
+//     let randomNumber = Math.floor(Math.random() * 6) + 1
+//     return randomNumber;
+// }
+
+// let hasSolvedChallenge = false
+// let hasHintsLeft = false
+
+// if (hasSolvedChallenge === false && hasHintsLeft === false) {
+//     showSolution()
+// }
+
+// function showSolution() {
+//     console.log("showing solution...");   
+// }
+
+
+// let likesDocumentaries = true
+// let likesStartups = true
+
+// if (likesDocumentaries === true || likesStartups === true) {
+//     recommendMovie()   
+// }
+
+// function recommendMovie() {
+//     console.log("hello");
+// }
+
+
+let castleListing = {
+    isSpacious : true,
+    cost : 350,
+    rooms : "twelve rooms",
+    address : [122, "londonstreet"]
 }
+
+console.log(castleListing.isSpacious , castleListing.cost);
