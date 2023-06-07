@@ -1,13 +1,30 @@
 let myLeads = []
+
+// myLeads = JSON.parse(myLeads)//turns it into an array
+// myLeads.push("www.hello.com")
+// myLeads = JSON.stringify(myLeads)//turns the array to a string again
+// console.log(typeof myLeads);
+
 const inputEl = document.getElementById("input-el")
 const saveBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+console.log(leadsFromLocalStorage);
+
+// localStorage.setItem("myLeads","www.hey.com")
+// console.log(localStorage.getItem("myLeads"));
+// localStorage.clear
+
+
+
 saveBtn.addEventListener("click",function() {
     myLeads.push(inputEl.value)
     inputEl.value = "";
-    //window.open(myLeads[i],"_blank")
+    localStorage.setItem("myLeads",JSON.stringify(myLeads))
     renderLeads()
+
+    console.log(localStorage.getItem("myLeads"));
 })
 function renderLeads() {
     let listItems = ""
