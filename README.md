@@ -1,1 +1,1 @@
-# jsPractice
+# React Mastery
